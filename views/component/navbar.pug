@@ -1,0 +1,14 @@
+nav(class="navbar navbar-expand-lg navbar-light bg-primary")
+    div(class="collapse navbar-collapse", id="navbarSupportedContent")
+        ul(class="navbar-nav mr-auto")
+            li(class="nav-item active")
+                a(href="#",class="nav-link")
+                    span( class="sr-only") (current)
+            li(class="nav-item")
+                a(href="/",class="nav-link text-light") HOME
+            li(class="nav-item")
+                a(href="/aboutus",class="nav-link text-light") About Us
+
+    form(class="form-inline my-2 my-lg-0",action="/search",method="post")
+        input(type="search", class="form-control mr-sm-2", placeholder="Search", aria-label="Search", name="searchText")
+        button(class="btn btn-outline-light my-2 my-sm-0", type="submit",id='searchBtn') Search

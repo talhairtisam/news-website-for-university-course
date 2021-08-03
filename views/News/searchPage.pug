@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+    .py-3
+        h1 Search on #{search}
+        each n in news
+            .card
+                .card-body
+                    .row    
+                        .col-4
+                            img(src=n.img, alt="post img",width="300")
+                        .col-8
+                            h2=n.title
+                            p(style="overflow:hidden;")=n.body
+                            a(href=`/article/${n._id}`,class="btn btn-primary") View

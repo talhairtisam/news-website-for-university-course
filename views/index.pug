@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  #featureCard
+    div(class="row w-100")
+      .col-lg-8
+        img(src=news[0].img, alt="News Picture", class="card-img")
+      .col-lg-4
+        h3=news[0].title
+        #scroll
+          p=news[0].body
+        a(href=`/article/${news[0]._id}`,class="btn btn-primary my-2") Read More
+  hr(class='bg-primary',style="height:2px;")
+  h1 Latest News
+  br
+  .row
+    each n in news
+      .col-lg-4
+        div(class="card", style="width: 18rem;") 
+          img(src=n.img, alt="News Picture", class="card-img-top")
+          .card-body
+            h5=n.title
+            p=n.body
+            a(href=`/article/${n._id}`,class="btn btn-primary") Read More
+  br
+  br

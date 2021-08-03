@@ -1,0 +1,62 @@
+body {
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+#featureCard{
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.card{
+  border: 0;
+}
+#scroll{
+  overflow: hidden;
+  max-height: 240px;
+}
+
+footer{
+  padding-bottom: 20px;
+}
+ul#bottom-link li,a{
+  display: inline;
+  padding: 10px;
+}
+
+.fa-5x{
+  width: 300px;
+}
+
+#login-form .form-group{
+  padding: 15px;
+  width: 400px;
+}
+#login-body{
+  padding: 90px;
+}
+
+#register-form .form-group{
+  padding: 15px;
+  width: 400px;
+}
+#register-body{
+  padding: 90px;
+}
+
+.fullView{
+  align-content: center;
+}
+.fullView img{
+  width: 80%;
+  padding: 10px;
+}
+.btn-danger {
+  margin-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 14px;
+}

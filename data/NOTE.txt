@@ -1,0 +1,3 @@
+Database name: newsArticles
+
+Collections: articles, admins, users

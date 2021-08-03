@@ -1,0 +1,23 @@
+extends ../cpanel
+
+block content
+    div(class="row justify-content-center align-items-center py-5")
+        .card.p-4  
+            .card-body
+                table.table
+                    tr
+                        th 
+                            h1 No of Posts:
+                        td
+                            h1=no_of_posts
+        .col-12
+            div(class=" row justify-content-center align-items-center")
+                .card.p-4  
+                    .card-body
+                        a(href="/cpanel/posts/add",class="btn btn-primary btn-lg ") Add New Post
+            
+        .col-12
+            div(class=" row justify-content-center align-items-center")
+                .card.p-4  
+                    .card-body
+                        a(href="/cpanel/posts",class="btn btn-primary btn-lg ") All Posts

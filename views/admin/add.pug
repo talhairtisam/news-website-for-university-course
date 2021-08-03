@@ -1,0 +1,26 @@
+extends ../cpanel
+
+block content
+    div(class="row justify-content-center align-items-center",id="login-body")
+        form(class="form w-100",action="/cpanel/posts/add",method="post")
+            div(align="center")
+                h3 New Post
+            .form-group
+                label(for="title",class="text-info") title:
+                br
+                input(type="text",name="title",id="title",class="form-control",placeholder="title")
+            .form-group
+                img(src="/images/blank_img.png", alt="post img",id="post-img")
+                br
+                input(type="file",name="img",id="img",class="form-control",onChange="readURL(this)" )
+            .form-group
+                label(for="body",class="text-info") Body:
+                br
+                textarea(name="body",id="body",class="form-control", cols="30", rows="10")
+            .form-group
+                label(for="keywords",class="text-info") Keywords:
+                br
+                input(type="text",name="keywords",id="keywords",class="form-control",placeholder="keywords")
+            
+            .form-group
+                input(type="submit",name="submit",class="btn btn-info form-control", Value="Add")

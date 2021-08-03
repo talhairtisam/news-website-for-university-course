@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+    div(class="p-5 fullView")
+        a(href="/back",class="previous") Back
+        h1=news.title
+        img(src=news.img, alt="New Picture")
+        p=news.body
+        br
+        .row
+            .col-6
+                p Date and Time :#{news.datetime}
+            .col-6
+                .row
+                    p Keywords:
+                    each key in news.keywords.split(',')
+                        a(href=`/search/${key}`)=key
+
+
+    

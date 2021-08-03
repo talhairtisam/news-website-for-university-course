@@ -1,0 +1,12 @@
+div(class="w-100 text-white bg-info pl-3")
+    if !user
+        a(href="/login",class="float-right btn btn-primary m-3") Login
+    if user
+        a(href="/logout",class="float-right btn btn-primary m-3") Logout
+    .navbar
+        a(href="/",class="navbar-brand text-white")
+            h2 CU NEWS
+        button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+            span(class="navbar-toggler-icon")
+    
+include navbar

@@ -1,0 +1,26 @@
+extends ../cpanel
+
+block content
+    div(class="row justify-content-center align-items-center",id="login-body")
+        form(class="form w-100",action="/cpanel/posts/update/"+news._id, method="post")
+            div(align="center")
+                h3 Update
+            .form-group
+                label(for="title",class="text-info") title:
+                br
+                input(type="text",name="title",id="title",class="form-control",placeholder="title",value=news.title)
+            .form-group
+                img(src=news.img, alt="post img",id="post-img")
+                br
+                input(type="file",name="img",id="img",class="form-control",placeholder="img",onChange="readURL(this)")
+            .form-group
+                label(for="body",class="text-info") Body:
+                br
+                textarea(name="body",id="body",class="form-control", cols="30", rows="10")=news.body
+            .form-group
+                label(for="keywords",class="text-info") Keywords:
+                br
+                input(type="text",name="keywords",id="keywords",class="form-control",placeholder="keywords",value=news.keywords)
+            
+            .form-group
+                input(type="submit",name="submit",class="btn btn-info form-control", Value="Update")

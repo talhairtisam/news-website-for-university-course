@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+    div(class="row justify-content-center align-items-center",id="login-body")
+        form(class="form",action="/login",method="post",id="login-form")
+            div(align="center")
+                h3 Login
+            .form-group
+                label(for="email",class="text-info") Email:
+                br
+                input(type="text",name="email",id="email",class="form-control",placeholder="Email")
+            .form-group
+                label(for="password",class="text-info") Password:
+                br
+                input(type="password",name="password",id="password",class="form-control",placeholder="Password")
+            .form-group
+                input(type="submit",name="submit",class="btn btn-info form-control", Value="Login")
+            div(align="center")
+                span If not already Register - 
+                a(href="/register") Resigter Now
+            
